@@ -12,8 +12,7 @@ from transformers import BertModel, BertTokenizer
 
 class FSMRE(nn.Module):
     """
-    Network composed of two hidden layers, each containing 100 ReLU activations.
-    Designed for the MNIST dataset.
+    few-shot multi-relation extraction
     """
     
     def __init__(self, encoder=None, aggregator=None, propagator=None, hidden_dim=100, proto_dim=200, support_size=25,
